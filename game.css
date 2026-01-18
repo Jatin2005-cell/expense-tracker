@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+header h1 {
+  color: #111827;
+}
+
+header p {
+  color: #e9da0a;
+}
+
+
+.balance-card {
+  background: rgba(255,255,255,0.85);
+  padding: 15px;
+  color: #111827;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.balance-card h2 {
+  margin: 10px 0;
+   color: #1d4ed8;
+}
+.balance-card h3 {
+  color: #374151;
+}
+
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary div {
+  width: 48%;
+  background: rgba(255,255,255,0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.income {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.expense {
+  background: #fef2f2;
+  color: #7f1d1d;
+}
+
+
+.add-transaction, .history {
+  margin-top: 20px;
+}
+
+.add-transaction input,
+.add-transaction select,
+.add-transaction button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.add-transaction button {
+  background: #22c55e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-transaction button:hover {
+  background: #16a34a;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history select {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#list li {
+  background: rgba(255,255,255,0.25);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#list li.plus {
+  border-left: 4px solid #22c55e;
+}
+
+#list li.minus {
+  border-left: 4px solid #ef4444;
+}
+
+.delete-btn {
+  cursor: pointer;
+  color: #ffdddd;
+  font-weight: bold;
+}
+.delete-btn {
+  margin-left: 8px;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #b91c1c;
+}
+#list li {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#list li small {
+  color: #6b7280;
+}
+
+#list li.plus {
+  border-left: 4px solid #22c55e;
+}
+
+#list li.minus {
+  border-left: 4px solid #ef4444;
+}
+.history h3 {
+  color: #111827;
+}
+
+.history-header select {
+  background: #ffffff;
+  color: #111827;
+}
+
+

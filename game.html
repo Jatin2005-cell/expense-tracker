@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker Pro</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+    <header>
+      <h1>Expense Tracker Pro</h1>
+      <p>Track your money smartly</p>
+    </header>
+
+    <section class="balance-card">
+      <h3>Total Balance</h3>
+      <h2 id="balance">₹0</h2>
+
+      <div class="summary">
+        <div class="income">
+          <span>Income</span>
+          <strong id="income">₹0</strong>
+        </div>
+        <div class="expense">
+          <span>Expense</span>
+          <strong id="expense">₹0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="add-transaction">
+      <h3>Add Transaction</h3>
+      <form id="form">
+        <input type="text" id="text" placeholder="Description" required />
+        <input type="number" id="amount" placeholder="Amount (+ / -)" required />
+
+        <select id="category">
+          <option value="Food">🍔 Food</option>
+          <option value="Travel">✈️ Travel</option>
+          <option value="Bills">💡 Bills</option>
+          <option value="Shopping">🛍️ Shopping</option>
+          <option value="Salary">💼 Salary</option>
+        </select>
+
+        <button>Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="history">
+      <div class="history-header">
+        <h3>History</h3>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+      </div>
+
+      <ul id="list"></ul>
+    </section>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html> 
